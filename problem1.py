@@ -37,9 +37,18 @@
 
 # 3 - masala 
 
-def merge_unique_ids(active_users: list, new_users: list) -> list:
-    natija = []
-    for user_id in active_users + new_users:
-        if user_id not in natija:
-            natija.append(user_id)
-    return natija
+# def merge_unique_ids(active_users: list, new_users: list) -> list:
+#     natija = []
+#     for user_id in active_users + new_users:
+#         if user_id not in natija:
+#             natija.append(user_id)
+#     return natija
+
+# 4 -masala 
+
+def narxi(mahsulot):
+    return int(mahsulot[1])
+
+
+def sorted_by_price(products: list) -> list:
+    return sorted(products, key=narxi, reverse=True)
