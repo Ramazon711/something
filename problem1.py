@@ -28,9 +28,18 @@
 
 # 2 - masala
 
-def search_by_genre(cinema: list, genre: str) -> list:
+# def search_by_genre(cinema: list, genre: str) -> list:
+#     natija = []
+#     for film in cinema:
+#         if film["genre"] == genre:
+#             natija.append(film)
+#     return natija
+
+# 3 - masala 
+
+def merge_unique_ids(active_users: list, new_users: list) -> list:
     natija = []
-    for film in cinema:
-        if film["genre"] == genre:
-            natija.append(film)
+    for user_id in active_users + new_users:
+        if user_id not in natija:
+            natija.append(user_id)
     return natija
